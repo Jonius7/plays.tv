@@ -27,8 +27,8 @@ def get_page_source(quality=720,
 
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-        "Accept-Language": "en-US,en;q=0.5",
+        #"Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        #"Accept-Language": "en-US,en;q=0.5",
     }
 
     #session = requests.Session()
@@ -37,7 +37,7 @@ def get_page_source(quality=720,
     #})
     for attempt in range(3):
         try:
-            print(source.strip())
+            #print(source.strip())
             #r = httpx.get(source.strip())
             r = requests.get(source, headers=headers)
             #r = session.get(source)
