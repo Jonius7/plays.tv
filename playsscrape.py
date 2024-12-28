@@ -35,9 +35,9 @@ def get_page_source(quality=720,
     #session.headers.update({
     #    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
     #})
-    for attempt in range(3):
+    for attempt in range(6):
         try:
-            #print(source.strip())
+            print(source.strip())
             #r = httpx.get(source.strip())
             r = requests.get(source, headers=headers)
             #r = session.get(source)
